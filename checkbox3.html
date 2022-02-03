@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Increment count when button is clicked</title>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color: green;">
+		Haseeb
+	</h1>
+
+	<h4>
+        Click Counts 
+	</h4>
+    <form id="form1" name="form1" method="post">
+        <p>
+            <input type="button" name="set_Value" id="set_Value" value="submit" onclick="setValue()" />
+        </p>
+        <p>
+            <label>
+                <input type="text" name="bbb" id="bbb" />
+            </label>
+        </p>
+    </form>
+    <script>
+        function setValue() {
+            document.getElementById('bbb').value = "new value here";
+            document.getElementById("form1").submit();
+        }
+    </script>
+</body>
+
+</html>

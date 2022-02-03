@@ -1,0 +1,18 @@
+<html>  
+<head>  
+    Hello  
+</head>  
+<body>  
+    <script type="text/javascript">  
+        function doChange() {  
+            var myInput = document.getElementById('myInput').value;  
+            document.getElementById('abhijeet').innerHTML = myInput;  
+        }  
+    </script>  
+    <p>  
+        Welcome to my site <b id='abhijeet'></b>  
+    </p>  
+    <input type='text' id='myInput' value='Enter Text Here' />  
+    <input type='button' onclick='doChange()' value='Change Text' />  
+</body>  
+</html>
